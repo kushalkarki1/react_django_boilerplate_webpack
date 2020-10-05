@@ -26,8 +26,8 @@ module.exports = {
         ]
     },
     output: {
-        path: path.resolve(__dirname, "build/static/"),
-        chunkFilename: 'static/[id].js'
+        path: path.resolve(__dirname, "../static/"),
+        chunkFilename: '../static/[id].js'
     },
     plugins: [
         new HtmlWebPackPlugin({
