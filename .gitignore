@@ -11,6 +11,7 @@ node_modules/
 # Distribution / packaging
 .Python
 build/
+package-lock.json
 develop-eggs/
 dist/
 downloads/
