@@ -120,3 +120,6 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 STATICFILES_DIRS = (BASE_DIR / "frontend/build/static",)
+
+MEDIA_URL = "/assets/"
+MEDIA_ROOT = BASE_DIR / "media/assets/"

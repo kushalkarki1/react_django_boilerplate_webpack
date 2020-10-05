@@ -8,11 +8,12 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.jsx?$/,
                 exclude: /node_modules/,
+                resolve: { extensions: [".js", ".jsx"] },
                 use: {
                     loader: "babel-loader"
-                }
+                },
             },
             {
                 test: /\.html$/,
@@ -25,7 +26,8 @@ module.exports = {
         ]
     },
     output: {
-        path: path.resolve(__dirname, "build/static/")
+        path: path.resolve(__dirname, "build/static/"),
+        chunkFilename: 'static/[id].js'
     },
     plugins: [
         new HtmlWebPackPlugin({
